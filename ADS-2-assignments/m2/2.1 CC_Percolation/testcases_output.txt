@@ -1,192 +1,264 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
-Expected Output: 
-false
-
-Your Output: 
-false
-----------------------------------------
-
-########## Testcase 4: Passed ##########
-Expected Output: 
-true
-
-Your Output: 
-true
-----------------------------------------
-
-########## Testcase 5: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
-########## Testcase 6: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
-########## Testcase 7: Passed ##########
-Expected Output: 
-true
-
-Your Output: 
-true
-----------------------------------------
-
-########## Testcase 8: Passed ##########
-Expected Output: 
-true
-
-Your Output: 
-true
-----------------------------------------
-
-########## Testcase 9: Passed ##########
-Expected Output: 
-true
-
-Your Output: 
-true
-----------------------------------------
-
-########## Testcase 10: Passed ##########
-Expected Output: 
-true
-
-Your Output: 
-true
-----------------------------------------
-
-########## Testcase 11: Passed ##########
-Expected Output: 
-true
-
-Your Output: 
-true
-----------------------------------------
-
-########## Testcase 12: Passed ##########
-Expected Output: 
-true
-
-Your Output: 
-true
-----------------------------------------
-
-########## Testcase 13: Passed ##########
+########## Testcase 5: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
+----------------------------------------
+
+########## Testcase 6: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
+----------------------------------------
+
+########## Testcase 7: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
+----------------------------------------
+
+########## Testcase 8: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
+----------------------------------------
+
+########## Testcase 9: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
+----------------------------------------
+
+########## Testcase 10: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
+----------------------------------------
+
+########## Testcase 11: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
+----------------------------------------
+
+########## Testcase 12: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
+----------------------------------------
+
+########## Testcase 13: Failed ##########
+Expected Output: 
 false
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
-########## Testcase 14: Passed ##########
+########## Testcase 14: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
-########## Testcase 15: Passed ##########
+########## Testcase 15: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
-########## Testcase 16: Passed ##########
+########## Testcase 16: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
-########## Testcase 17: Passed ##########
+########## Testcase 17: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
-########## Testcase 18: Passed ##########
+########## Testcase 18: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
-########## Testcase 19: Passed ##########
+########## Testcase 19: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
-########## Testcase 20: Passed ##########
+########## Testcase 20: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
-########## Testcase 21: Passed ##########
+########## Testcase 21: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
-########## Testcase 22: Passed ##########
+########## Testcase 22: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
-########## Testcase 23: Passed ##########
+########## Testcase 23: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at DepthFirstPaths.<init>(DepthFirstPaths.java:29)
+	at Percolation.percolates(Solution.java:60)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 

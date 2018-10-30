@@ -1,14 +1,17 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+/**
+ * Class for graph.
+ */
 public class Graph {
     /**
      *the variable to maintain vertex.
      */
-    private final int V;
+    private final int vertices;
     /**
      *the variable to maintain edges.
      */
-    private int E;
+    private int edges;
     /**
      *the variable to adjacency matrix.
      */
@@ -16,38 +19,42 @@ public class Graph {
     /**
      *the constructor to initialize.
      *
-     * @param      V  vertices
+     * @param      vertices1  vertices
      */
-    public Graph(final int V) {
-        if (V < 0) throw new IllegalArgumentException("Too few vertices");
-        this.V = V;
-        this.E = 0;
-        this.adj = new boolean[V][V];
+    public Graph(final int vertices1) {
+        if (vertices1 < 0) {
+            throw new IllegalArgumentException("Too few vertices");
+        }
+        this.vertices = vertices1;
+        this.edges = 0;
+        this.adj = new boolean[vertices1][vertices1];
     }
     /**
      *
      *the method to return vertices.
      * @return vertices.
      */
-    public int V() {
-        return V;
+    public int vertices() {
+        return vertices;
     }
     /**
      *the method is to return edges.
      *
      * @return  edges.
      */
-    public int E() {
-     return E;
+    public int edges() {
+     return edges;
  }
  /**
-  * adds an edge
+  * adds an edge.
   *
   * @param      v  vertexOne
   * @param      w  vertexTwo
   */
-    public void addEdge(int v, int w) {
-        if (!adj[v][w]) E++;
+    public void addEdge(final int v, final int w) {
+        if (!adj[v][w]) {
+            edges++;
+        }
         adj[v][w] = true;
         adj[w][v] = true;
     }
@@ -60,44 +67,80 @@ public class Graph {
      * @return connection is there are not.
      */
 
-    public boolean contains(int v, int w) {
+    /**
+     * checks if contains.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public boolean contains(final int v, final int w) {
         return adj[v][w];
     }
 
     /**
-     * return list of neighbors of v
+     * return list of neighbors of v.
      *
      * @param      v  vertex
      *
      * @return  iterator
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         return new AdjIterator(v);
     }
     /**
-     *support iteration over graph vertices
+     *support iteration over graph vertices.
      */
     private class AdjIterator implements Iterator<Integer>,
      Iterable<Integer> {
+        /**
+         * v.
+         */
         private int v;
+        /**
+         * w.
+         */
         private int w = 0;
 
-        AdjIterator(int v) {
-            this.v = v;
+        /**
+         * Constructs the object.
+         *
+         * @param      v1    The v 1
+         */
+        AdjIterator(final int v1) {
+            this.v = v1;
         }
 
+        /**
+         * iterator.
+         *
+         * @return     { description_of_the_return_value }
+         */
         public Iterator<Integer> iterator() {
             return this;
         }
 
+        /**
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
         public boolean hasNext() {
-            while (w < V) {
-                if (adj[v][w]) return true;
+            while (w < vertices) {
+                if (adj[v][w]) {
+                    return true;
+                }
                 w++;
             }
             return false;
         }
 
+        /**
+         * next.
+         *
+         * @return     { description_of_the_return_value }
+         */
         public Integer next() {
             if (!hasNext()) {
                 throw new NoSuchElementException();
@@ -105,6 +148,9 @@ public class Graph {
             return w++;
         }
 
+        /**
+         * remove.
+         */
         public void remove()  {
             throw new UnsupportedOperationException();
         }
@@ -112,14 +158,14 @@ public class Graph {
 
 
     /**
-     *string representation of Graph - takes quadratic time
+     *string representation of Graph - takes quadratic time.
      *
      * @return     String representation of the object.
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(V + " " + E + "\n");
-        for (int v = 0; v < V; v++) {
+        s.append(vertices + " " + edges + "\n");
+        for (int v = 0; v < vertices; v++) {
             s.append(v + ": ");
             for (int w : adj(v)) {
                 s.append(w + " ");

@@ -45,6 +45,8 @@ class GraphList implements Graph {
     }
     /**
      * Adds an edge.
+     * 
+     * Time complexity: O(1).
      *
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
@@ -68,6 +70,8 @@ class GraphList implements Graph {
     }
     /**
      * Determines if it has edge.
+     * 
+     * Time complexity: O(E).
      *
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
@@ -178,6 +182,8 @@ class GraphMatrix implements Graph {
     /**
      * Adds an edge.
      *
+     *Time complexity: O(1).
+     *
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      */
@@ -190,6 +196,8 @@ class GraphMatrix implements Graph {
     }
     /**
      * Determines if it has edge.
+     *
+     *Time complexity: O(1).
      *
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }

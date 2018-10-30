@@ -1,6 +1,12 @@
 Starting audit...
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m1\1.1 Graph\Bag.java:65: Line has trailing spaces. [RegexpSingleline]
 Audit done.
+Checkstyle ends with 2 errors.
 Starting audit...
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m1\1.1 Graph\GraphList.java:48: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m1\1.1 Graph\GraphList.java:73: Line has trailing spaces. [RegexpSingleline]
 Audit done.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.

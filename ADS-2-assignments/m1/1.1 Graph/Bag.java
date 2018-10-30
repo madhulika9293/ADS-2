@@ -62,6 +62,8 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
      * { Add the item to the bag }.
+     * 
+     * time complexity is O(1).
      *
      * @param      item  The item
      */

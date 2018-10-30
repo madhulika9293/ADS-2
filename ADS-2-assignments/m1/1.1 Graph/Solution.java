@@ -1,56 +1,87 @@
 import java.util.Scanner;
-
+/**
+ * Interface for graph.
+ */
 interface Graph {
-    public int V();
-    public int E();
-    public void addEdge(int v, int w);
-    public Iterable<Integer> adj(int v);
-    public boolean hasEdge(int v, int w);
+    /**
+     * number of vertices.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    int vertices();
+    /**
+     * number of edges.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    int edges();
+    /**
+     * Adds an edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     */
+    void addEdge(int v, int w);
+    /**
+     * iterable.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    Iterable<Integer> adj(int v);
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
+    boolean hasEdge(int v, int w);
 }
-
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
     private Solution() {
-
+        // empty constructor.
     }
     /**
-     * Main function to handle inputs and deliver outputs.
+     * main method.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        String type = scan.nextLine();
-        int vertices = Integer.parseInt(scan.nextLine());
-        int edges = Integer.parseInt(scan.nextLine());
-        String[] input = scan.nextLine().split(",");
-        if (type.equals("List")) {
-            GraphList g = new GraphList(vertices);
-            for (int i = 0; i < edges; i++) {
-                String[] add = scan.nextLine().split(" ");
-                int a = Integer.parseInt(add[0]);
-                int b = Integer.parseInt(add[1]);
-                if (a != b && !g.hasEdge(a, b)) {
-                    g.addEdge(a, b);
-                }
+        String s = scan.nextLine();
+        int v = Integer.parseInt(scan.nextLine());
+        int e = Integer.parseInt(scan.nextLine());
+        int temp = e;
+        String[] data = scan.nextLine().split(",");
+        if (s.equals("List")) {
+            GraphList list = new GraphList(v);
+            while (temp > 0) {
+                String[] fun = scan.nextLine().split(" ");
+                list.addEdge(Integer.parseInt(fun[0]),
+                             Integer.parseInt(fun[1]));
+                temp--;
             }
-            System.out.println(g.display(input));
-        } else {
-            AdjMatrixGraph mat = new AdjMatrixGraph(vertices);
-            for (int i = 0; i < edges; i++) {
-                String[] add = scan.nextLine().split(" ");
-                int a = Integer.parseInt(add[0]);
-                int b = Integer.parseInt(add[1]);
-                if (a != b && !mat.hasEdge(a, b)) {
-                    mat.addEdge(a, b);
-                }
+            System.out.println(list.display(data));
+        } else if (s.equals("Matrix")) {
+            temp = e;
+            GraphMatrix sol = new GraphMatrix(v);
+            while (temp > 0) {
+                String[] fun = scan.nextLine().split(" ");
+                sol.addEdge(Integer.parseInt(fun[0]),
+                            Integer.parseInt(fun[1]));
+                temp--;
             }
-            System.out.println(mat.display());
+            System.out.println(sol);
         }
     }
 }
+

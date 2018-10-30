@@ -1,65 +1,80 @@
-public class GraphList implements Graph {
-    private static final String NEWLINE = System.getProperty("line.separator");
-
-    private final int V;
-    private int E;
-    private Bag<Integer>[] adj;
-    
+/**
+ * List of graphs.
+ */
+class GraphList implements Graph {
     /**
-     * Initializes an empty GraphList with {@code V} vertices and 0 edges.
-     * param V the number of vertices
-     *
-     * @param  V number of vertices
-     * @throws IllegalArgumentException if {@code V < 0}
+     * vertices.
      */
-    public GraphList(int V) {
-        if (V < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
-        this.V = V;
-        this.E = 0;
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
-            adj[v] = new Bag<Integer>();
+    private int vertices;
+    /**
+     * edges.
+     */
+    private int edge;
+    /**
+     * bag.
+     */
+    private Bag<Integer>[] adj;
+    /**
+     * Constructs the object.
+     *
+     * @param      v1    The v 1
+     */
+    GraphList(final int v1) {
+        this.vertices = v1;
+        this.edge = 0;
+        this.adj = (Bag<Integer>[]) new Bag[vertices];
+        for (int i = 0; i < vertices; i++) {
+            adj[i] = new Bag<Integer>();
         }
     }
     /**
-     * Returns the number of vertices in this GraphList.
+     * vertices.
      *
-     * @return the number of vertices in this GraphList
+     * @return     { description_of_the_return_value }
      */
-    public int V() {
-        return V;
+    public int vertices() {
+        return this.vertices;
     }
-
     /**
-     * Returns the number of edges in this GraphList.
+     * number of edges.
      *
-     * @return the number of edges in this GraphList
+     * @return     { description_of_the_return_value }
      */
-    public int E() {
-        return E;
+    public int edges() {
+        return this.edge;
     }
-
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(int v) {
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
-    }
-
     /**
-     * Adds the undirected edge v-w to this GraphList.
+     * Adds an edge.
      *
-     * @param  v one vertex in the edge
-     * @param  w the other vertex in the edge
-     * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
      */
-    public void addEdge(int v, int w) {
-        // validateVertex(v);
-        // validateVertex(w);
-        E++;
+    public void addEdge(final int v, final int w) {
+        if (!hasEdge(v, w) && v != w) {
+            edge++;
         adj[v].add(w);
         adj[w].add(v);
+        }
     }
-    public boolean hasEdge(int v, int w) {
+    /**
+     * iterable.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Iterable<Integer> adj(final int v) {
+        return adj[v];
+    }
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
+    public boolean hasEdge(final int v, final int w) {
         int count = 0;
         for (int i : adj[v]) {
             if (i == w) {
@@ -78,52 +93,131 @@ public class GraphList implements Graph {
         }
         return false;
     }
-
     /**
-     * Returns the vertices adjacent to vertex {@code v}.
+     * display.
      *
-     * @param  v the vertex
-     * @return the vertices adjacent to vertex {@code v}, as an iterable
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     */
-    public Iterable<Integer> adj(int v) {
-        validateVertex(v);
-        return adj[v];
-    }
-
-    /**
-     * Returns the degree of vertex {@code v}.
+     * @param      data  The data
      *
-     * @param  v the vertex
-     * @return the degree of vertex {@code v}
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @return     { description_of_the_return_value }
      */
-    public int degree(int v) {
-        validateVertex(v);
-        return adj[v].size();
-    }
-
-
-    /**
-     * Returns a string representation of this GraphList.
-     *
-     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,
-     *         followed by the <em>V</em> adjacency lists
-     */
-    public String display(String[] data) {
-        StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + E + " edges" + NEWLINE);
-        if (E > 0) {
-            for (int v = 0; v < V; v++) {
-                s.append(data[v] + ": ");
-                for (int w : adj[v]) {
-                    s.append(data[w] + " ");
-                }
-                s.append(NEWLINE);
-            }
+    public String display(final String[] data) {
+        String s = "";
+        s += vertices + " vertices, " + edge + " edges" + '\n';
+        if (edge == 0) {
+            s += "No edges ";
         } else {
-            s.append("No edges");
+            for (int v = 0; v < vertices; v++) {
+                s += data[v] + ": ";
+                for (int w : adj[v]) {
+                    s += data[w] + " ";
+                }
+                s += '\n';
+            }
         }
-        return s.toString();
+        return s.substring(0, s.length() - 1);
+    }
+
+}
+/**
+ * Class for graph matrix.
+ */
+class GraphMatrix implements Graph {
+    /**
+     * number of vertices.
+     */
+    private int vertices;
+    /**
+     * number of edges.
+     */
+    private int edges;
+    /**
+     * matrix.
+     */
+    private int[][] matrix;
+    /**
+     * Constructs the object.
+     *
+     * @param      v1    The v1.
+     */
+    GraphMatrix(final int v1) {
+        this.vertices = v1;
+        this.edges = 0;
+        this.matrix = new int[vertices][vertices];
+        for (int i = 0; i < vertices; i++) {
+            for (int j = 0; j < vertices; j++) {
+                matrix[i][j] = 0;
+            }
+        }
+    }
+    /**
+     * Iterable.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Iterable<Integer> adj(final int v) {
+        return null;
+    }
+    /**
+     * number of vertices.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int vertices() {
+        return this.vertices;
+    }
+    /**
+     * number of edges.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int edges() {
+        return this.edges;
+    }
+    /**
+     * Adds an edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     */
+    public void addEdge(final int v, final int w) {
+        if (!hasEdge(v, w) && v != w) {
+            edges++;
+        }
+        matrix[v][w] = 1;
+        matrix[w][v] = 1;
+    }
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
+    public boolean hasEdge(final int v, final int w) {
+        return (matrix[v][w] == 1);
+    }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
+    public String toString() {
+        String s = "";
+        s += vertices + " vertices, " + edges + " edges" + '\n';
+        if (edges == 0) {
+            s += "No edges ";
+        } else {
+            for (int i = 0; i < vertices; i++) {
+                for (int j = 0; j < vertices; j++) {
+                    s += matrix[i][j] + " ";
+                }
+                s = s.substring(0, s.length());
+                s += ('\n');
+            }
+        }
+        return s.substring(0, s.length() -  1);
     }
 }

@@ -27,25 +27,25 @@ public class Bipartite {
      * Determines whether an undirected graph is bipartite and finds either a
      * bipartition or an odd-length cycle.
      *
-     * @param  G the graph
+     * @param  graph the graph
      */
-    public Bipartite(Graph G) {
+    public Bipartite(final Graph graph) {
         isBipartite = true;
-        color  = new boolean[G.V()];
-        marked = new boolean[G.V()];
-        edgeTo = new int[G.V()];
+        color  = new boolean[graph.V()];
+        marked = new boolean[graph.V()];
+        edgeTo = new int[graph.V()];
 
-        for (int v = 0; v < G.V(); v++) {
+        for (int v = 0; v < graph.V(); v++) {
             if (!marked[v]) {
-                dfs(G, v);
+                dfs(graph, v);
             }
         }
-        assert check(G);
+        assert check(graph);
     }
 
-    private void dfs(Graph G, int v) {
+    private void dfs(final Graph graph, final int v) {
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : graph.adj(v)) {
 
             // short circuit if odd-length cycle found
             if (cycle != null) return;
@@ -54,7 +54,7 @@ public class Bipartite {
             if (!marked[w]) {
                 edgeTo[w] = v;
                 color[w] = !color[v];
-                dfs(G, w);
+                dfs(graph, w);
             }
 
             // if v-w create an odd-length cycle, find it
@@ -90,7 +90,7 @@ public class Bipartite {
      * @throws UnsupportedOperationException if this method is called when the graph
      *         is not bipartite
      */
-    public boolean color(int v) {
+    public boolean color(final int v) {
         validateVertex(v);
         if (!isBipartite)
             throw new UnsupportedOperationException("graph is not bipartite");
@@ -109,11 +109,11 @@ public class Bipartite {
         return cycle;
     }
 
-    private boolean check(Graph G) {
+    private boolean check(final Graph graph) {
         // graph is bipartite
         if (isBipartite) {
-            for (int v = 0; v < G.V(); v++) {
-                for (int w : G.adj(v)) {
+            for (int v = 0; v < graph.V(); v++) {
+                for (int w : graph.adj(v)) {
                     if (color[v] == color[w]) {
                         System.err.printf("edge %d-%d with %d and %d in same side of bipartition\n", v, w, v, w);
                         return false;
@@ -140,7 +140,7 @@ public class Bipartite {
     }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(int v) {
+    private void validateVertex(final int v) {
         int V = marked.length;
         if (v < 0 || v >= V)
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));

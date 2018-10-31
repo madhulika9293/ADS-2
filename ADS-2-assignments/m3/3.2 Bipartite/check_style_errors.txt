@@ -1,0 +1,47 @@
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:2:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:3: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:3:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:4: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:4:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:5:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:6:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:14:22: Parameter G should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:14:28: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:28:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:28:22: Parameter G should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:28:28: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:28:31: Parameter v should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:33: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:40:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:46: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:68: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:69: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:72: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:75:26: Parameter v should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:77: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:94:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:94:27: Parameter G should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:94:33: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:100: Line is longer than 80 characters (found 113). [LineLength]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:105:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:112: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:116: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:125:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:125:33: Parameter v should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:126:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:127: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:128: Line is longer than 80 characters (found 99). [LineLength]
+Audit done.
+Checkstyle ends with 34 errors.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.

@@ -1,0 +1,80 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+Cycle doesn't exists.
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:56)
+	at Solution.main(Solution.java:26)
+----------------------------------------
+
+########## Testcase 1: Failed ##########
+Expected Output: 
+Cycle doesn't exists.
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:56)
+	at Solution.main(Solution.java:26)
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+Cycle exists.
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:56)
+	at Solution.main(Solution.java:26)
+----------------------------------------
+
+########## Testcase 3: Failed ##########
+Expected Output: 
+Cycle exists.
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:56)
+	at Solution.main(Solution.java:26)
+----------------------------------------
+
+########## Testcase 4: Failed ##########
+Expected Output: 
+Cycle exists.
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:56)
+	at Solution.main(Solution.java:26)
+----------------------------------------
+
+########## Testcase 5: Failed ##########
+Expected Output: 
+Cycle exists.
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:56)
+	at Solution.main(Solution.java:26)
+----------------------------------------
+
+########## Testcase 6: Failed ##########
+Expected Output: 
+Cycle doesn't exists.
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:56)
+	at Solution.main(Solution.java:26)
+----------------------------------------
+
+########## Testcase 7: Failed ##########
+Expected Output: 
+Cycle exists.
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:56)
+	at Solution.main(Solution.java:26)
+----------------------------------------
+

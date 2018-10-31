@@ -1,38 +1,13 @@
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:199: Line has trailing spaces. [RegexpSingleline]
 Audit done.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:11: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:12: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:14: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:20: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:29: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:45:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:46:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:47:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:48: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:48:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:55:26: Parameter G should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:55:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:59: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:60: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:63: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:64:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:64:22: Parameter G should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:64:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:64:33: Parameter v should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:70: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:76:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:94: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:101: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:102: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:111:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:117: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:121: Line is longer than 80 characters (found 90). [LineLength]
 Audit done.
-Checkstyle ends with 28 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...

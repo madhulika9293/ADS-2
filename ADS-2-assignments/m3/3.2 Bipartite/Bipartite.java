@@ -40,7 +40,6 @@ public class Bipartite {
                 dfs(graph, v);
             }
         }
-        assert check(graph);
     }
 
     /**
@@ -63,10 +62,7 @@ public class Bipartite {
                 edgeTo[w] = v;
                 color[w] = !color[v];
                 dfs(graph, w);
-            }
-
-            // if v-w create an odd-length cycle, find it
-            else if (color[w] == color[v]) {
+            } else if (color[w] == color[v]) {
                 isBipartite = false;
                 cycle = new Stack<Integer>();
                 cycle.push(w);
@@ -101,9 +97,10 @@ public class Bipartite {
      * is not bipartite
      */
     public boolean color(final int v) {
-        validateVertex(v);
-        if (!isBipartite)
-            throw new UnsupportedOperationException("graph is not bipartite");
+        if (!isBipartite) {
+            throw new UnsupportedOperationException(
+                "graph is not bipartite");
+        }
         return color[v];
     }
 
@@ -117,44 +114,5 @@ public class Bipartite {
      */
     public Iterable<Integer> oddCycle() {
         return cycle;
-    }
-
-    private boolean check(final Graph graph) {
-        // graph is bipartite
-        if (isBipartite) {
-            for (int v = 0; v < graph.V(); v++) {
-                for (int w : graph.adj(v)) {
-                    if (color[v] == color[w]) {
-                        System.err.printf("edge %d-%d with %d and %d in same side of bipartition\n", v, w, v, w);
-                        return false;
-                    }
-                }
-            }
-        }
-
-        // graph has an odd-length cycle
-        else {
-            // verify cycle
-            int first = -1, last = -1;
-            for (int v : oddCycle()) {
-                if (first == -1) first = v;
-                last = v;
-            }
-            if (first != last) {
-                System.err.printf("cycle begins with %d and ends with %d\n", first, last);
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(final int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V) {
-            throw new IllegalArgumentException(
-                "vertex " + v + " is not between 0 and " + (V - 1));
-        }
     }
 }

@@ -91,12 +91,14 @@ public class Bipartite {
      * Returns the side of the bipartite that vertex {@code v} is on.
      *
      * @param  v the vertex
-     * @return the side of the bipartition that vertex {@code v} is on; two vertices
-     *         are in the same side of the bipartition if and only if they have the
-     *         same color
+     * @return the side of the bipartition that vertex {@code v} is on;
+     * two vertices
+     * are in the same side of the bipartition if and only if they have the
+     * same color
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     * @throws UnsupportedOperationException if this method is called when the graph
-     *         is not bipartite
+     * @throws UnsupportedOperationException if this method
+     * is called when the graph
+     * is not bipartite
      */
     public boolean color(final int v) {
         validateVertex(v);
@@ -150,7 +152,9 @@ public class Bipartite {
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     private void validateVertex(final int v) {
         int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
+        if (v < 0 || v >= V) {
+            throw new IllegalArgumentException(
+                "vertex " + v + " is not between 0 and " + (V - 1));
+        }
     }
 }

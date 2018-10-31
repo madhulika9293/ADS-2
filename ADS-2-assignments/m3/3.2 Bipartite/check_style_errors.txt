@@ -2,21 +2,16 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:66:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:94: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:95: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:98: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:103: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:120:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:126: Line is longer than 80 characters (found 113). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:131:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:138: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:142: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:151:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:152:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:153: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:154: Line is longer than 80 characters (found 99). [LineLength]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:105: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:122:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:128: Line is longer than 80 characters (found 113). [LineLength]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:133:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:140: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:144: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:153:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\Bipartite.java:154:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 Audit done.
 Starting audit...

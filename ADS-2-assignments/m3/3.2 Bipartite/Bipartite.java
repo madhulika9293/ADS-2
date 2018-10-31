@@ -1,9 +1,27 @@
+/**
+ * Class for bipartite.
+ */
 public class Bipartite {
-    private boolean isBipartite;   // is the graph bipartite?
-    private boolean[] color;       // color[v] gives vertices on one side of bipartition
-    private boolean[] marked;      // marked[v] = true iff v has been visited in DFS
-    private int[] edgeTo;          // edgeTo[v] = last edge on path to v
-    private Stack<Integer> cycle;  // odd-length cycle
+    /**
+     * checks if the graph bipartite.
+     */
+    private boolean isBipartite;
+    /**
+     * color[v] gives vertices on one side of bipartition.
+     */
+    private boolean[] color;
+    /**
+     * marked[v] = true iff v has been visited in DFS.
+     */
+    private boolean[] marked;
+    /**
+     * edgeTo[v] = last edge on path to v.
+     */
+    private int[] edgeTo;
+    /**
+     * odd-length cycle.
+     */
+    private Stack<Integer> cycle;
 
     /**
      * Determines whether an undirected graph is bipartite and finds either a

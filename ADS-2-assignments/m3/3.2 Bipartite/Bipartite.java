@@ -43,12 +43,20 @@ public class Bipartite {
         assert check(graph);
     }
 
+    /**
+     * DFS.
+     *
+     * @param      graph  The graph
+     * @param      v      { parameter_description }
+     */
     private void dfs(final Graph graph, final int v) {
         marked[v] = true;
         for (int w : graph.adj(v)) {
 
             // short circuit if odd-length cycle found
-            if (cycle != null) return;
+            if (cycle != null) {
+                return;
+            }
 
             // found uncolored vertex, so recur
             if (!marked[w]) {
@@ -61,7 +69,7 @@ public class Bipartite {
             else if (color[w] == color[v]) {
                 isBipartite = false;
                 cycle = new Stack<Integer>();
-                cycle.push(w);  // don't need this unless you want to include start vertex twice
+                cycle.push(w);
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
                 }

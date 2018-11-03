@@ -73,11 +73,11 @@ class PageRank {
           tempPR[i] += temp;
         }
       }
-      if (it > 2 && Arrays.equals(pr, tempPR)) {
-        flag = true;
-        System.out.println(it);
-        break;
-      }
+      // if (it > 2 && Arrays.equals(pr, tempPR)) {
+      //   flag = true;
+      //   System.out.println(it);
+      //   break;
+      // }
       pr = tempPR.clone();
       // System.out.println(Arrays.toString(tempPR));
       // double delta = 0.0;

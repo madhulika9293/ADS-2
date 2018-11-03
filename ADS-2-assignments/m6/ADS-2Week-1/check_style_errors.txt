@@ -163,12 +163,13 @@ Starting audit...
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:24:26: Expected @param tag for 'graph1'. [JavadocMethod]
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:36:3: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:58:3: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:95:3: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:104: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:111: Class Solution should be declared as final. [FinalClass]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:123:27: Parameter args should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:74:20: '0.001' is a magic number. [MagicNumber]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:99:3: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:108: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:115: Class Solution should be declared as final. [FinalClass]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:127:27: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 15 errors.
 Starting audit...
 Audit done.
 Starting audit...

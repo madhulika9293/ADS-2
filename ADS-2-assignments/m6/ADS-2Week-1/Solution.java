@@ -56,7 +56,7 @@ class PageRank {
   }
 
   public void getPR() {
-    final int iter = 1000;
+    final int iter = 104;
     boolean flag = false;
     for (int it = 0; it < iter; it++) {
       double[] tempPR = new double[graph.vertices()];
@@ -67,9 +67,13 @@ class PageRank {
         }
       }
       // System.out.println(Arrays.toString(tempPR));
-      // for (int i = 0; i < graph.vertices; i++) {
-
-      // }
+      double delta = 0.0;
+      for (int i = 0; i < graph.vertices(); i++) {
+        delta += (double) (tempPR[i] - pr[i]);
+      }
+      if (delta == 0.001) {
+        break;
+      }
       pr = tempPR;
       // System.out.println(Arrays.toString(pr));
     }

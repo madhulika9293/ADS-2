@@ -9,17 +9,20 @@ class PageRank {
   /**
    * the digraph.
    */
-  Digraph graph;
+  private Digraph graph;
   /**
    * PageRank array.
    */
-  double[] pr;
+  private double[] pr;
 
-  ArrayList<Integer>[] incomVr;
+  /**
+   * imcoming vertices.
+   */
+  private ArrayList<Integer>[] incomVr;
   /**
    * Constructs the object.
    *
-   * @param      graph  The graph
+   * @param      graph1  The graph
    */
   PageRank(final Digraph graph1) {
     this.graph = graph1;
@@ -33,6 +36,11 @@ class PageRank {
     incomVr = getAdjRev();
   }
 
+  /**
+   * Gets the adj reverse.
+   *
+   * @return     The adj reverse.
+   */
   public ArrayList<Integer>[] getAdjRev() {
     ArrayList<Integer>[] adjRev = new ArrayList[graph.vertices()];
 
@@ -51,8 +59,11 @@ class PageRank {
     return adjRev;
   }
 
+  /**
+   * Gets the pr.
+   */
   public void getPR() {
-    final int iter = 1000;
+    final int iter = 104;
     boolean flag = false;
     for (int it = 0; it < iter; it++) {
       double[] tempPR = new double[graph.vertices()];
@@ -62,7 +73,7 @@ class PageRank {
           tempPR[i] += temp;
         }
       }
-      if (it > 5 && Arrays.equals(pr, tempPR)) {
+      if (it > 2 && Arrays.equals(pr, tempPR)) {
         flag = true;
         System.out.println(it);
         break;
@@ -99,6 +110,9 @@ class PageRank {
     return out.substring(0, out.length() - 1);
   }
 
+  /**
+   * prints the data.
+   */
   public void print() {
     getPR();
     for (int i = 0; i < pr.length; i++) {
@@ -115,7 +129,7 @@ class WebSearch {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
   /**
    * Constructs the object.
    */
@@ -127,7 +141,7 @@ public class Solution {
    *
    * @param      args  The arguments
    */
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
 
     // read the first line of the input to get the number of vertices
     // iterate count of vertices times

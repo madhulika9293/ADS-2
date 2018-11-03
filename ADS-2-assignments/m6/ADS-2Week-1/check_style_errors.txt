@@ -154,7 +154,6 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:12:11: Variable 'graph' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:16:12: Variable 'pr' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:18:21: Missing a Javadoc comment. [JavadocVariable]
@@ -162,14 +161,14 @@ Starting audit...
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:22:6: Unused @param tag for 'graph'. [JavadocMethod]
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:24:26: Expected @param tag for 'graph1'. [JavadocMethod]
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:36:3: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:58:3: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:74:20: '0.001' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:99:3: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:108: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:115: Class Solution should be declared as final. [FinalClass]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:127:27: Parameter args should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:54:3: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:65:16: '5' is a magic number. [MagicNumber]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:102:3: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:111: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:118: Class Solution should be declared as final. [FinalClass]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:130:27: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 14 errors.
 Starting audit...
 Audit done.
 Starting audit...

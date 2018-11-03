@@ -48,15 +48,11 @@ class PageRank {
         adjRev[num].add(i);
       }
     }
-    // System.out.println(adjRev[0]);
-    // System.out.println(adjRev[1]);
-    // System.out.println(adjRev[2]);
-    // System.out.println(adjRev[3]);
     return adjRev;
   }
 
   public void getPR() {
-    final int iter = 104;
+    final int iter = 1000;
     boolean flag = false;
     for (int it = 0; it < iter; it++) {
       double[] tempPR = new double[graph.vertices()];
@@ -66,15 +62,22 @@ class PageRank {
           tempPR[i] += temp;
         }
       }
-      // System.out.println(Arrays.toString(tempPR));
-      double delta = 0.0;
-      for (int i = 0; i < graph.vertices(); i++) {
-        delta += (double) (tempPR[i] - pr[i]);
-      }
-      if (delta == 0.001) {
+      if (it > 5 && Arrays.equals(pr, tempPR)) {
+        flag = true;
+        System.out.println(it);
         break;
       }
-      pr = tempPR;
+      pr = tempPR.clone();
+      // System.out.println(Arrays.toString(tempPR));
+      // double delta = 0.0;
+      // for (int i = 0; i < graph.vertices(); i++) {
+      //   delta += (double) (tempPR[i] - pr[i]);
+      // }
+      // // System.out.println(delta);
+      // if (it > 1 && delta == 0.00005) {
+      //   System.out.println(it);
+      //   break;
+      // }
       // System.out.println(Arrays.toString(pr));
     }
   }

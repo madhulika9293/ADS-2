@@ -146,8 +146,6 @@ public class Digraph {
     /**
      * Gets the adj.
      *
-     * @param      vertex  The vertex
-     *
      * @return     The adj.
      */
     public Bag<Integer>[] getAdj() {

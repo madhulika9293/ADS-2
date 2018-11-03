@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Arrays;
+// import java.util.Arrays;
 import java.util.ArrayList;
 
 /**
@@ -121,7 +121,9 @@ class PageRank {
     }
   }
 }
-
+/**
+ * Class for web search.
+ */
 class WebSearch {
 
 }

@@ -3,27 +3,12 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Digraph.java:149:8: Unused @param tag for 'vertex'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:125: Missing a Javadoc comment. [JavadocType]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
-Starting audit...
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\temp.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\temp.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\temp.java:1:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\temp.java:1:20: Name 'temp' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\temp.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\temp.java:2:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\temp.java:2:33: Parameter args should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\temp.java:4:43: '3.0' is a magic number. [MagicNumber]
-Audit done.
-Checkstyle ends with 8 errors.

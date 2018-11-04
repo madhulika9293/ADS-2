@@ -1,7 +1,9 @@
 import java.util.Scanner;
-// import java.util.Arrays;
+import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.math.BigDecimal;
+import java.math.MathContext;
 import java.io.File;
 import java.io.IOException;
 /**
@@ -15,12 +17,13 @@ class PageRank {
   /**
    * PageRank array.
    */
-  private double[] pr;
+  private BigDecimal[] pr;
 
   /**
    * imcoming vertices.
    */
   private ArrayList<Integer>[] incomVr;
+
   /**
    * Constructs the object.
    *
@@ -28,10 +31,10 @@ class PageRank {
    */
   PageRank(final Digraph graph1) {
     this.graph = graph1;
-    pr = new double[graph1.vertices()];
+    pr = new BigDecimal[graph1.vertices()];
     for (int i = 0; i < graph.vertices(); i++) {
       // int temp = graph.vertices();
-      pr[i] = (double) (1.0 / graph.vertices());
+      pr[i] = BigDecimal.valueOf(1.0 / graph.vertices());
     }
     for (int i = 0; i < graph.vertices(); i++) {
       if (graph.outdegree(i) == 0) {
@@ -79,34 +82,37 @@ class PageRank {
    * Complexity:  O(V).
    */
   public void getPR() {
-    final int iter = 980;
-    boolean flag = false;
-    for (int it = 0; it < iter; it++) {
-      double[] tempPR = new double[graph.vertices()];
+    final int iter = 1000;
+    // boolean flag = false;
+    for (int it = 1; it <= iter; it++) {
+      // double[] tempPR = new double[graph.vertices()];
+      // for (int i = 0; i < graph.vertices(); i++) {
+      //   for (Integer ver : incomVr[i]) {
+      //     double temp = (double) pr[ver] / graph.outdegree(ver) * 1.0;
+      //     tempPR[i] += temp;
+      //   }
+
+      BigDecimal[] tempPR = new BigDecimal[graph.vertices()];
+      Arrays.fill(tempPR, BigDecimal.ZERO);
       for (int i = 0; i < graph.vertices(); i++) {
         for (Integer ver : incomVr[i]) {
-          double temp = (double) pr[ver] / graph.outdegree(ver) * 1.0;
-          tempPR[i] += temp;
+          BigDecimal temp = pr[ver].divide(BigDecimal.valueOf(
+                                             graph.outdegree(ver) * 1.0),
+                                           MathContext.DECIMAL64);
+          // System.out.println(tempPR[i]);
+          tempPR[i] = tempPR[i].add(temp, MathContext.DECIMAL64);
         }
-      }
 
-      // if (it > 2 && Arrays.equals(pr, tempPR)) {
-      //   flag = true;
-      //   // System.out.println(it);
-      //   break;
-      // }
-      pr = tempPR.clone();
+      }
+      // System.out.println(it);
+      if (Arrays.equals(pr, tempPR)) {
+        // System.out.println(it);
+        break;
+      }
+      // System.out.println(it);
       // System.out.println(Arrays.toString(tempPR));
-      // double delta = 0.0;
-      // for (int i = 0; i < graph.vertices(); i++) {
-      //   delta += (double) (tempPR[i] - pr[i]);
-      // }
-      // // System.out.println(delta);
-      // if (it > 1 && delta == 0.00005) {
-      //   System.out.println(it);
-      //   break;
-      // }
       // System.out.println(Arrays.toString(pr));
+      pr = tempPR.clone();
     }
   }
 
@@ -119,7 +125,7 @@ class PageRank {
    *
    * @return     The pr value.
    */
-  public double getPRValue(final int vertex) {
+  public BigDecimal getPRValue(final int vertex) {
     return pr[vertex];
   }
 
@@ -199,11 +205,11 @@ class WebSearch {
    */
   public int iAmFeelingLucky(final String query) {
     if (webCont.containsKey(query)) {
-      double max = 0.0;
+      BigDecimal max = BigDecimal.ZERO;
       int mpage = 0;
       for (Integer page : webCont.get(query)) {
-        double temp = pgS.getPRValue(page);
-        if (temp >= max) {
+        BigDecimal temp = pgS.getPRValue(page);
+        if (temp.compareTo(max) >= 0) {
           max = temp;
           mpage = page;
         }

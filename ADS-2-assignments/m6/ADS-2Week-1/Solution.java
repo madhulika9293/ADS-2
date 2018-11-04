@@ -72,7 +72,7 @@ class PageRank {
    * Gets the pr.
    */
   public void getPR() {
-    final int iter = 989;
+    final int iter = 980;
     boolean flag = false;
     for (int it = 0; it < iter; it++) {
       double[] tempPR = new double[graph.vertices()];

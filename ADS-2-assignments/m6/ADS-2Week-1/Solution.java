@@ -31,6 +31,15 @@ class PageRank {
       // int temp = graph.vertices();
       pr[i] = (double) (1.0 / graph.vertices());
     }
+    for (int i = 0; i < graph.vertices(); i++) {
+      if (graph.outdegree(i) == 0) {
+        for (int j = 0; j < graph.vertices(); j++) {
+          if (j != i) {
+            graph.addEdge(i, j);
+          }
+        }
+      }
+    }
     // System.out.println(Arrays.toString(pr));
     // System.out.println(graph.vertices());
     incomVr = getAdjRev();
@@ -73,6 +82,7 @@ class PageRank {
           tempPR[i] += temp;
         }
       }
+
       // if (it > 2 && Arrays.equals(pr, tempPR)) {
       //   flag = true;
       //   // System.out.println(it);

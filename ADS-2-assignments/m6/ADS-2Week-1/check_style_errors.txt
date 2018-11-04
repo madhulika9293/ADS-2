@@ -9,7 +9,11 @@ Audit done.
 Starting audit...
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:153:3: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:153:12: Variable 'pgS' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:154:3: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:154:39: Variable 'webCont' must be private and have accessor methods. [VisibilityModifier]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.

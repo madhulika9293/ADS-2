@@ -1,7 +1,9 @@
 import java.util.Scanner;
 import java.util.Arrays;
 import java.util.ArrayList;
-
+import java.util.HashMap;
+import java.io.File;
+import java.io.IOException;
 /**
  * Class for page rank.
  */
@@ -43,6 +45,7 @@ class PageRank {
     // System.out.println(Arrays.toString(pr));
     // System.out.println(graph.vertices());
     incomVr = getAdjRev();
+    getPR();
   }
 
   /**
@@ -104,6 +107,19 @@ class PageRank {
   }
 
   /**
+   * Gets the pr value.
+   *
+   * @param      vertex  The vertex
+   *
+   * @return     The pr value.
+   */
+  public double getPRValue(final int vertex) {
+    return pr[vertex];
+  }
+
+
+
+  /**
    * Returns a string representation of the object.
    *
    * @return     String representation of the object.
@@ -124,7 +140,6 @@ class PageRank {
    * prints the data.
    */
   public void print() {
-    getPR();
     for (int i = 0; i < pr.length; i++) {
       System.out.printf(i + " - ");
       System.out.println(pr[i]);
@@ -135,7 +150,55 @@ class PageRank {
  * Class for web search.
  */
 class WebSearch {
+  PageRank pgS;
+  HashMap<String, ArrayList<Integer>> webCont;
+  /**
+   * Constructs the object.
+   *
+   * @param      pg1       The page 1
+   * @param      filename  The filename
+   */
+  WebSearch(final PageRank pg1, final String filename) {
+    this.pgS = pg1;
+    try {
+      File file = new File(filename);
+      Scanner sc = new Scanner(file);
+      webCont = new HashMap<>();
+      while (sc.hasNextLine()) {
+        String[] temp = sc.nextLine().split(":");
+        for (String word : temp[1].split(" ")) {
+          webCont.putIfAbsent(word, new ArrayList<Integer>());
+          webCont.get(word).add(Integer.parseInt(temp[0]));
+        }
+      }
+    } catch (IOException ioe) {
+      throw new IllegalArgumentException("Could not open");
+    }
+  }
 
+  /**
+   * returns the webpage with the best page rank.
+   *
+   * @param      query  The query
+   *
+   * @return     the webpage.
+   */
+  public int iAmFeelingLucky(final String query) {
+    if (webCont.containsKey(query)) {
+      double max = 0.0;
+      int mpage = 0;
+      for (Integer page : webCont.get(query)) {
+        double temp = pgS.getPRValue(page);
+        if (temp >= max) {
+          max = temp;
+          mpage = page;
+        }
+      }
+      return mpage;
+    } else {
+      return -1;
+    }
+  }
 }
 
 /**
@@ -193,11 +256,17 @@ public final class Solution {
 
     // instantiate web search object
     // and pass the page rank object and the file path to the constructor
+    WebSearch ws = new WebSearch(pg, file);
 
     // read the search queries from std in
     // remove the q= prefix and extract the search word
     // pass the word to iAmFeelingLucky method of web search
     // print the return value of iAmFeelingLucky
 
+    while (scan.hasNext()) {
+      String qr = scan.nextLine();
+      String qrMod = qr.substring(2, qr.length());
+      System.out.println(ws.iAmFeelingLucky(qrMod));
+    }
   }
 }

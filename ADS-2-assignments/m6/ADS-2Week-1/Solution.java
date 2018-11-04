@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Arrays;
+// import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.io.File;
@@ -51,6 +51,8 @@ class PageRank {
   /**
    * Gets the adj reverse.
    *
+   * Complexity : O(V)
+   *
    * @return     The adj reverse.
    */
   public ArrayList<Integer>[] getAdjRev() {
@@ -73,6 +75,8 @@ class PageRank {
 
   /**
    * Gets the pr.
+   *
+   * Complexity:  O(V).
    */
   public void getPR() {
     final int iter = 980;
@@ -108,6 +112,8 @@ class PageRank {
 
   /**
    * Gets the pr value.
+   *
+   *Complexity:  O(1).
    *
    * @param      vertex  The vertex
    *
@@ -150,8 +156,14 @@ class PageRank {
  * Class for web search.
  */
 class WebSearch {
-  PageRank pgS;
-  HashMap<String, ArrayList<Integer>> webCont;
+  /**
+   * the pagerank object.
+   */
+  private PageRank pgS;
+  /**
+   * hash map for the words in the content.
+   */
+  private HashMap<String, ArrayList<Integer>> webCont;
   /**
    * Constructs the object.
    *
@@ -178,6 +190,8 @@ class WebSearch {
 
   /**
    * returns the webpage with the best page rank.
+   *
+   * Complexity:  O(V).
    *
    * @param      query  The query
    *

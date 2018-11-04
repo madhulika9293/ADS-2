@@ -1,5 +1,5 @@
 import java.util.Scanner;
-// import java.util.Arrays;
+import java.util.Arrays;
 import java.util.ArrayList;
 
 /**
@@ -63,7 +63,7 @@ class PageRank {
    * Gets the pr.
    */
   public void getPR() {
-    final int iter = 104;
+    final int iter = 1000;
     boolean flag = false;
     for (int it = 0; it < iter; it++) {
       double[] tempPR = new double[graph.vertices()];
@@ -73,11 +73,11 @@ class PageRank {
           tempPR[i] += temp;
         }
       }
-      // if (it > 2 && Arrays.equals(pr, tempPR)) {
-      //   flag = true;
-      //   System.out.println(it);
-      //   break;
-      // }
+      if (it > 2 && Arrays.equals(pr, tempPR)) {
+        flag = true;
+        // System.out.println(it);
+        break;
+      }
       pr = tempPR.clone();
       // System.out.println(Arrays.toString(tempPR));
       // double delta = 0.0;

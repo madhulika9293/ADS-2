@@ -23,7 +23,7 @@ class PageRank {
   /**
    * imcoming vertices.
    */
-  private ArrayList<Integer>[] incomVr;
+  private Bag<Integer>[] incomVr;
 
   /**
    * Constructs the object.
@@ -50,7 +50,8 @@ class PageRank {
     }
     // System.out.println(Arrays.toString(pr));
     // System.out.println(graph.vertices());
-    incomVr = getAdjRev();
+    // incomVr = getAdjRev();
+    incomVr = graph.reverse().getAdj();
     getPR();
   }
 
@@ -85,9 +86,9 @@ class PageRank {
    * Complexity:  O(V).
    */
   public void getPR() {
-    final int iter = 104;
+    final int iter = 1000;
     // boolean flag = false;
-    for (int it = 1; it <= iter; it++) {
+    for (int it = 0; it < iter; it++) {
       double[] tempPR = new double[graph.vertices()];
       for (int i = 0; i < graph.vertices(); i++) {
         for (Integer ver : incomVr[i]) {

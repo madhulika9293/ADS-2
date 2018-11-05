@@ -70,7 +70,7 @@ public class Edge implements Comparable<Edge> {
      * @throws IllegalArgumentException if the vertex is not one of the
      *         endpoints of this edge
      */
-    public int other(int vertex) {
+    public int other(final int vertex) {
         if      (vertex == v) {
             return w;
         } else if (vertex == w) {
@@ -83,10 +83,12 @@ public class Edge implements Comparable<Edge> {
     /**
      * Compares two edges by weight.
      * Note that {@code compareTo()} is not consistent with {@code equals()},
-     * which uses the reference equality implementation inherited from {@code Object}.
+     * which uses the reference equality
+     * implementation inherited from {@code Object}.
      *
      * @param  that the other edge
-     * @return a negative integer, zero, or positive integer depending on whether
+     * @return a negative integer, zero,
+     * or positive integer depending on whether
      *         the weight of this is less than, equal to, or greater than the
      *         argument edge
      */

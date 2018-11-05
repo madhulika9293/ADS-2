@@ -72,9 +72,6 @@ public class Bag<Item> implements Iterable<Item> {
         first.next = oldfirst;
         n++;
     }
-    public int dummy() {
-        return 0;
-    }
 
     /**
     * Returns a string representation of the object.

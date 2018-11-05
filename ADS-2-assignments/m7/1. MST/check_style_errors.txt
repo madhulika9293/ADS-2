@@ -1,34 +1,13 @@
 Starting audit...
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Bag.java:75:5: Class 'Bag' looks like designed for extension (can be subclassed), but the method 'dummy' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Bag' final or making the method 'dummy' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Bag.java:75:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 1 errors.
+Starting audit...
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:73:22: Parameter vertex should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:86: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:89: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
 Checkstyle ends with 3 errors.
-Starting audit...
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:4: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:25: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:29:17: Parameter v should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:29:21: 'v' hides a field. [HiddenField]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:29:24: Parameter w should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:29:28: 'w' hides a field. [HiddenField]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:29:31: Parameter weight should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:29:38: 'weight' hides a field. [HiddenField]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:30: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:30: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:31: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:31: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:32: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:32: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:57: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:64:22: Parameter vertex should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:65: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:66: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:67: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:73: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:76: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m7\1. MST\Edge.java:81:26: Parameter that should be final. [FinalParameters]
-Audit done.
-Checkstyle ends with 22 errors.
 Starting audit...
 Audit done.
 Starting audit...

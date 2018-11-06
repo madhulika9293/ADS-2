@@ -20,8 +20,9 @@ public final class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 
-		int vertices = Integer.parseInt(scan.nextLine());
-		int edges = Integer.parseInt(scan.nextLine());
+		String[] grInp = scan.nextLine().split(" ");
+		int vertices = Integer.parseInt(grInp[0]);
+		int edges = Integer.parseInt(grInp[1]);
 		EdgeWeightedGraph eg = new EdgeWeightedGraph(vertices);
 
 		HashMap<String, Integer> stations = new HashMap<>();

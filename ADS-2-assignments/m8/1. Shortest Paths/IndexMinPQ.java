@@ -1,17 +1,39 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
-public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
-    private int maxN;        // maximum number of elements on PQ
-    private int n;           // number of elements on PQ
-    private int[] pq;        // binary heap using 1-based indexing
-    private int[] qp;        // inverse of pq - qp[pq[i]] = pq[qp[i]] = i
-    private Key[] keys;      // keys[i] = priority of i
+/**
+ * Class for index minimum pq.
+ *
+ * @param      <Key>  The key
+ */
+public class IndexMinPQ<Key extends Comparable<Key>>
+    implements Iterable<Integer> {
+    /**
+     * maximum number of elements on PQ.
+     */
+    private int maxN;
+    /**
+     * number of elements on PQ.
+     */
+    private int n;
+    /**
+     * binary heap using 1-based indexing.
+     */
+    private int[] pq;
+    /**
+     * inverse of pq - qp[pq[i]] = pq[qp[i]] = i.
+     */
+    private int[] qp;
+    /**
+     * keys[i] = priority of i.
+     */
+    private Key[] keys;
 
     /**
-     * Initializes an empty indexed priority queue with indices between {@code 0}
+     * Initializes an empty indexed priority queue
+     *  with indices between {@code 0}
      * and {@code maxN - 1}.
-     * @param  maxN the keys on this priority queue are index from {@code 0}
+     * @param  maxN the keys on this priority queue
+     *  are index from {@code 0}
      *         {@code maxN - 1}
      * @throws IllegalArgumentException if {@code maxN < 0}
      */
@@ -109,10 +131,10 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         int min = pq[1];
         exch(1, n--);
         sink(1);
-        assert min == pq[n+1];
+        assert min == pq[n + 1];
         qp[min] = -1;        // delete
         keys[min] = null;    // to help with garbage collection
-        pq[n+1] = -1;        // not needed
+        pq[n + 1] = -1;      // not needed
         return min;
     }
 
@@ -214,9 +236,9 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
     }
 
 
-   /***************************************************************************
-    * General helper functions.
-    ***************************************************************************/
+    /***************************************************************************
+     * General helper functions.
+     ***************************************************************************/
     private boolean greater(int i, int j) {
         return keys[pq[i]].compareTo(keys[pq[j]]) > 0;
     }
@@ -230,20 +252,20 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
     }
 
 
-   /***************************************************************************
-    * Heap helper functions.
-    ***************************************************************************/
+    /***************************************************************************
+     * Heap helper functions.
+     ***************************************************************************/
     private void swim(int k) {
-        while (k > 1 && greater(k/2, k)) {
-            exch(k, k/2);
-            k = k/2;
+        while (k > 1 && greater(k / 2, k)) {
+            exch(k, k / 2);
+            k = k / 2;
         }
     }
 
     private void sink(int k) {
-        while (2*k <= n) {
-            int j = 2*k;
-            if (j < n && greater(j, j+1)) j++;
+        while (2 * k <= n) {
+            int j = 2 * k;
+            if (j < n && greater(j, j + 1)) j++;
             if (!greater(k, j)) break;
             exch(k, j);
             k = j;
@@ -251,9 +273,9 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
     }
 
 
-   /***************************************************************************
-    * Iterators.
-    ***************************************************************************/
+    /***************************************************************************
+     * Iterators.
+     ***************************************************************************/
 
     /**
      * Returns an iterator that iterates over the keys on the

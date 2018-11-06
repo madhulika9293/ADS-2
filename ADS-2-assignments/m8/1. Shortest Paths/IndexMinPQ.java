@@ -329,7 +329,7 @@ public class IndexMinPQ<Key extends Comparable<Key>>
    *
    * @param      k1     { parameter_description }
    */
-  private void sink(int k1) {
+  private void sink(final int k1) {
     int k = k1;
     while (2 * k <= n) {
       int j = 2 * k;
@@ -377,7 +377,7 @@ public class IndexMinPQ<Key extends Comparable<Key>>
     /**
      * Constructs the object.
      */
-    public HeapIterator() {
+    HeapIterator() {
       copy = new IndexMinPQ<Key>(pq.length - 1);
       for (int i = 1; i <= n; i++) {
         copy.insert(pq[i], keys[pq[i]]);

@@ -3,27 +3,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:29: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:30: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:36: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:45: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:53: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:64: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:65: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:70: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:74: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:75: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:96: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:99: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:104: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:118: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:143: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:150: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:161: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:163: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:165: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 19 errors.
 Starting audit...
 Audit done.
 Starting audit...

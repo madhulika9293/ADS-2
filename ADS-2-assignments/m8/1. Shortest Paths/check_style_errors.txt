@@ -9,29 +9,10 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:35:6: Unused @param tag for 'maxN'. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:40:31: Expected @param tag for 'maxN1'. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:49: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:97:22: Parameter i should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:97:29: Parameter key should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:171: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:263:22: Parameter i should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:316:21: Parameter k should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:328:21: Parameter k should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:331: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:332: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:350:39: '{' at column 39 should have line break after. [LeftCurly]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:352: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:354:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:358:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:358:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:360: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:364:31: '{' at column 31 should have line break after. [LeftCurly]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:365:31: '{' at column 31 should have line break after. [LeftCurly]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:367:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:368: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:332:21: Parameter k1 should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\IndexMinPQ.java:380:5: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...

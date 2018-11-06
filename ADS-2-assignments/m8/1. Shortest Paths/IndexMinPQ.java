@@ -31,11 +31,11 @@ public class IndexMinPQ<Key extends Comparable<Key>>
   /**
    * Initializes an empty indexed priority queue
    *  with indices between {@code 0}
-   * and {@code maxN - 1}.
-   * @param  maxN the keys on this priority queue
+   * and {@code maxN1 - 1}.
+   * @param  maxN1 the keys on this priority queue
    *  are index from {@code 0}
-   *         {@code maxN - 1}
-   * @throws IllegalArgumentException if {@code maxN < 0}
+   *         {@code maxN1 - 1}
+   * @throws IllegalArgumentException if {@code maxN1 < 0}
    */
   public IndexMinPQ(final int maxN1) {
     if (maxN1 < 0) {
@@ -46,8 +46,9 @@ public class IndexMinPQ<Key extends Comparable<Key>>
     keys = (Key[]) new Comparable[maxN1 + 1];
     pq   = new int[maxN1 + 1];
     qp   = new int[maxN1 + 1];
-    for (int i = 0; i <= maxN1; i++)
+    for (int i = 0; i <= maxN1; i++) {
       qp[i] = -1;
+    }
   }
 
   /**
@@ -94,7 +95,7 @@ public class IndexMinPQ<Key extends Comparable<Key>>
    * is an item associated
    *         with index {@code i}
    */
-  public void insert(int i, Key key) {
+  public void insert(final int i, final Key key) {
     if (i < 0 || i >= maxN) {
       throw new IllegalArgumentException();
     }
@@ -168,7 +169,9 @@ public class IndexMinPQ<Key extends Comparable<Key>>
     }
     if (!contains(i)) {
       throw new NoSuchElementException("index is not in the priority queue");
-    } else return keys[i];
+    } else {
+      return keys[i];
+    }
   }
 
   /**
@@ -260,7 +263,7 @@ public class IndexMinPQ<Key extends Comparable<Key>>
    * @throws IllegalArgumentException unless {@code 0 <= i < maxN}
    * @throws NoSuchElementException no key is associated with index {@code i}
    */
-  public void delete(int i) {
+  public void delete(final int i) {
     if (i < 0 || i >= maxN) {
       throw new IllegalArgumentException();
     }
@@ -311,9 +314,10 @@ public class IndexMinPQ<Key extends Comparable<Key>>
   /**
    * swim.
    *
-   * @param      k     { parameter_description }
+   * @param      k1     { parameter_description }
    */
-  private void swim(int k) {
+  private void swim(final int k1) {
+    int k = k1;
     while (k > 1 && greater(k / 2, k)) {
       exch(k, k / 2);
       k = k / 2;
@@ -323,13 +327,18 @@ public class IndexMinPQ<Key extends Comparable<Key>>
   /**
    * sink.
    *
-   * @param      k     { parameter_description }
+   * @param      k1     { parameter_description }
    */
-  private void sink(int k) {
+  private void sink(int k1) {
+    int k = k1;
     while (2 * k <= n) {
       int j = 2 * k;
-      if (j < n && greater(j, j + 1)) j++;
-      if (!greater(k, j)) break;
+      if (j < n && greater(j, j + 1)) {
+        j++;
+      }
+      if (!greater(k, j)) {
+        break;
+      }
       exch(k, j);
       k = j;
     }
@@ -347,25 +356,57 @@ public class IndexMinPQ<Key extends Comparable<Key>>
    *
    * @return an iterator that iterates over the keys in ascending order
    */
-  public Iterator<Integer> iterator() { return new HeapIterator(); }
+  public Iterator<Integer> iterator() {
+    return new HeapIterator();
+  }
 
+  /**
+   * Class for heap iterator.
+   */
   private class HeapIterator implements Iterator<Integer> {
-    // create a new pq
+    //
+
+    /**
+     * create a new pq.
+     */
     private IndexMinPQ<Key> copy;
 
     // add all elements to copy of heap
     // takes linear time since already in heap order so no keys move
+
+    /**
+     * Constructs the object.
+     */
     public HeapIterator() {
       copy = new IndexMinPQ<Key>(pq.length - 1);
-      for (int i = 1; i <= n; i++)
+      for (int i = 1; i <= n; i++) {
         copy.insert(pq[i], keys[pq[i]]);
+      }
+    }
+    /**
+     * Determines if it has next.
+     *
+     * @return     True if has next, False otherwise.
+     */
+    public boolean hasNext()  {
+      return !copy.isEmpty();
     }
 
-    public boolean hasNext()  { return !copy.isEmpty();                     }
-    public void remove()      { throw new UnsupportedOperationException();  }
-
+    /**
+     * remove.
+     */
+    public void remove()      {
+      throw new UnsupportedOperationException();
+    }
+    /**
+     * next.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Integer next() {
-      if (!hasNext()) throw new NoSuchElementException();
+      if (!hasNext()) {
+        throw new NoSuchElementException();
+      }
       return copy.delMin();
     }
   }

@@ -47,7 +47,7 @@ public final class Solution {
 			int vertFrom  = stations.get(inp[0]);
 			int vertTo  = stations.get(inp[1]);
 			DijkstraUndirectedSP dusp = new DijkstraUndirectedSP(eg, vertFrom);
-			System.out.println(dusp.distTo(vertTo));
+			System.out.println((int) dusp.distTo(vertTo));
 		}
 	}
 }

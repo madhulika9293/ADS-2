@@ -117,7 +117,9 @@ public class Solution {
                     printEnergies("/Files/" + file);
                 }
                 break;
-
+            case "":
+                System.out.println("picture is null");
+                break;
             default:
                 seamCarver = new SeamCarver(null);
                 break;

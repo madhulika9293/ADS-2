@@ -4,17 +4,21 @@ import java.util.Arrays;
 public class Solution {
 
     public static void printEnergies(String fileName) {
-        Picture picture = new Picture(fileName);
-        StdOut.printf("image is %d pixels wide by %d pixels high.\n", picture.width(), picture.height());
+        try {
+            Picture picture = new Picture(fileName);
+            StdOut.printf("image is %d pixels wide by %d pixels high.\n", picture.width(), picture.height());
 
-        SeamCarver sc = new SeamCarver(picture);
+            SeamCarver sc = new SeamCarver(picture);
 
-        StdOut.printf("Printing energy calculated for each pixel.\n");
+            StdOut.printf("Printing energy calculated for each pixel.\n");
 
-        for (int row = 0; row < sc.height(); row++) {
-            for (int col = 0; col < sc.width(); col++)
-                StdOut.printf("%9.0f ", sc.energy(col, row));
-            StdOut.println();
+            for (int row = 0; row < sc.height(); row++) {
+                for (int col = 0; col < sc.width(); col++)
+                    StdOut.printf("%9.0f ", sc.energy(col, row));
+                StdOut.println();
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
         }
     }
 
@@ -116,9 +120,6 @@ public class Solution {
                     seamCarver.removeVerticalSeam(verticalSeam);
                     printEnergies("/Files/" + file);
                 }
-                break;
-            case "":
-                System.out.println("picture is null");
                 break;
             default:
                 seamCarver = new SeamCarver(null);

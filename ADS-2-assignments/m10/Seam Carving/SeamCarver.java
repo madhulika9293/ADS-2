@@ -14,9 +14,14 @@ public class SeamCarver {
   /**
    * create a seam carver object based on the given picture.
    *
+   *Complexity : width*height
+   *
    * @param      picture  The picture
    */
-  public SeamCarver(Picture picture) {
+  public SeamCarver(Picture picture) throws Exception {
+    if (picture == null) {
+      throw new Exception("picture is null");
+    }
     this.picInp = picture;
     energy = new double[picture.width()][picture.height()];
     for (int i = 0; i < picture.width(); i++) {
@@ -34,8 +39,8 @@ public class SeamCarver {
           Color tPix = picture.get(i, j - 1);
           Color bPix = picture.get(i, j + 1);
           sum += Math.pow(tPix.getRed() - bPix.getRed(), 2)
-                       + Math.pow(tPix.getBlue() - bPix.getBlue(), 2)
-                       + Math.pow(tPix.getGreen() - bPix.getGreen(), 2);
+                 + Math.pow(tPix.getBlue() - bPix.getBlue(), 2)
+                 + Math.pow(tPix.getGreen() - bPix.getGreen(), 2);
           energy[i][j] = Math.sqrt(sum);
         }
       }

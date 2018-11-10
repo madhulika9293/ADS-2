@@ -28,7 +28,7 @@ public class Solution {
     for (int i = 0; i < edges; i++) {
       String[] inputs = scan.nextLine().split(" ");
       int v = Integer.parseInt(inputs[0]);
-      int w = Integer.parseInt(inputs[0]);
+      int w = Integer.parseInt(inputs[1]);
       double wght = Double.parseDouble(inputs[2]);
       Edge e = new Edge(v, w, wght);
       eg.addEdge(e);

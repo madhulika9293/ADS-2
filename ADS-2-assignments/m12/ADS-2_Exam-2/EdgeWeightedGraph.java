@@ -123,6 +123,6 @@ public class EdgeWeightedGraph {
             }
             s.append(NEWLINE);
         }
-        return s.toString();
+        return s.toString() + "\n";
     }
 }

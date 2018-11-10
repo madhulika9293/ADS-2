@@ -52,7 +52,7 @@ public class Solution {
       if (dusp.hasPathTo(Integer.parseInt(inputs[1]))) {
         System.out.println(dusp.distTo(dest));
       } else {
-        System.out.println("No Path Found");
+        System.out.println("No Path Found.");
       }
       break;
 

@@ -88,6 +88,8 @@ public class IndexMinPQ<Key extends Comparable<Key>>
   /**
    * Associates key with index {@code i}.
    *
+   * Complexity: log(N)
+   *
    * @param  i an index
    * @param  key the key to associate with index {@code i}
    * @throws IllegalArgumentException unless {@code 0 <= i < maxN}
@@ -112,6 +114,8 @@ public class IndexMinPQ<Key extends Comparable<Key>>
 
   /**
    * Returns an index associated with a minimum key.
+   *
+   * Complexity: O(1)
    *
    * @return an index associated with a minimum key
    * @throws NoSuchElementException if this priority queue is empty
@@ -138,6 +142,9 @@ public class IndexMinPQ<Key extends Comparable<Key>>
 
   /**
    * Removes a minimum key and returns its associated index.
+   *
+   * Complexity: O(log(N)).
+   *
    * @return an index associated with a minimum key
    * @throws NoSuchElementException if this priority queue is empty
    */
@@ -210,6 +217,8 @@ public class IndexMinPQ<Key extends Comparable<Key>>
   /**
    * Decrease the key associated with index {@code i} to the specified value.
    *
+   * Complexity: O(log(N)).
+   *
    * @param  i the index of the key to decrease
    * @param  key decrease the key associated with index {@code i} to this key
    * @throws IllegalArgumentException unless {@code 0 <= i < maxN}
@@ -233,6 +242,8 @@ public class IndexMinPQ<Key extends Comparable<Key>>
 
   /**
    * Increase the key associated with index {@code i} to the specified value.
+   *
+   * Complexity: O(log(N)).
    *
    * @param  i the index of the key to increase
    * @param  key increase the key associated with index {@code i} to this key

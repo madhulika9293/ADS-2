@@ -20,6 +20,7 @@ public class DijkstraUndirectedSP {
      * Computes a shortest-paths tree from the source vertex {@code s} to every
      * other vertex in the edge-weighted graph {@code G}.
      *
+     * Complexity : E + V
      * @param  graph the edge-weighted digraph
      * @param  s the source vertex
      * @throws IllegalArgumentException if an edge weight is negative

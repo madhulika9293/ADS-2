@@ -240,8 +240,10 @@ public class SeamCarver {
     for (int col = 0; col < width; col++) {
       for (int row = seam[col]; row < height - 1; row++) {
         this.picInp.set(col, row, this.picInp.get(col, row + 1));
+        // System.out.println("rch");
       }
     }
+    // System.out.println("rch");
     height--;
   }
   // remove vertical seam from current picture

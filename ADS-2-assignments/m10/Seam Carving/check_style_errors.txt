@@ -257,9 +257,9 @@ Starting audit...
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:238:3: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'removeHorizontalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'removeHorizontalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:238:3: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:238:36: Parameter seam should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:249:3: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'removeVerticalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'removeVerticalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:249:3: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:249:34: Parameter seam should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:251:3: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'removeVerticalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'removeVerticalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:251:3: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:251:34: Parameter seam should be final. [FinalParameters]
 Audit done.
 Checkstyle ends with 38 errors.
 Starting audit...
@@ -310,7 +310,7 @@ Starting audit...
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:47:29: Parameter args should be final. [FinalParameters]
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:80: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:88: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:106: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:106: Line is longer than 80 characters (found 88). [LineLength]
 Audit done.
 Checkstyle ends with 20 errors.
 Starting audit...

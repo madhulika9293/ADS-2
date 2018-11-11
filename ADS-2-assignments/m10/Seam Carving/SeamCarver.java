@@ -12,14 +12,6 @@ public class SeamCarver {
    */
   private double[][] energy;
   /**
-   * distance array.
-   */
-  private double[][] distTo;
-  /**
-   * edge array.
-   */
-  private int[][] edgeTo;
-  /**
    *the width of image.
    */
   private int width;
@@ -117,6 +109,8 @@ public class SeamCarver {
    * @return  sequence of indices of horizontal seam
    */
   public int[] findHorizontalSeam() {
+    int[][] edgeTo = new int[height][width];
+    double[][] distTo = new double[height][width];
     reset(distTo);
     for (int row = 0; row < height; row++) {
       distTo[row][0] = 1000;
@@ -169,6 +163,8 @@ public class SeamCarver {
    * @return sequence of indices for vertical seam.
    */
   public int[] findVerticalSeam() {
+    int[][] edgeTo = new int[height][width];
+    double[][] distTo = new double[height][width];
     reset(distTo);
     int[] indices = new int[height];
     if (width == 1 || height == 1) {

@@ -1,6 +1,6 @@
 Starting audit...
-Audit done.
-Starting audit...
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m13\Radix Sorts\Solution.java:15:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m13\Radix Sorts\Quick3string.java:46: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 1 errors.
+Starting audit...
+Audit done.

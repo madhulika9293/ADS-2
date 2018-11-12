@@ -43,7 +43,7 @@ public final class Quick3string {
 
     /**
      * 3-way string quicksort a[lo..hi] starting at dth character.
-     * 
+     *
      * Complexity: O(N*length).
      *
      * @param      a     { parameter_description }

@@ -33,7 +33,7 @@ public final class Solution {
       System.out.println(s);
     }
   }
-  /*
+  /**
    * Loads words.
    *
    * @return     { description_of_the_return_value }

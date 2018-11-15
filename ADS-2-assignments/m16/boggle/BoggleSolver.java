@@ -17,6 +17,10 @@ public class BoggleSolver {
 
     // Returns the set of all valid words in the given Boggle board, as an Iterable.
     public Iterable<String> getAllValidWords(BoggleBoard board) {
+        if (board == null) {
+            throw new NullPointerException("board is null");
+        }
+
         HashSet<String> validWords = new HashSet<String>();
 
         int r = board.rows();

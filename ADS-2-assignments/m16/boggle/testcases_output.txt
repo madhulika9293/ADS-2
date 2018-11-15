@@ -3,9 +3,7 @@ Expected Output:
 Score = 33
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 106
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -13,9 +11,7 @@ Expected Output:
 Score = 84
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 134
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -23,9 +19,7 @@ Expected Output:
 Score = 1
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 3
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -33,9 +27,7 @@ Expected Output:
 Score = 2
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 6
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -43,9 +35,7 @@ Expected Output:
 Score = 3
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 10
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -53,9 +43,7 @@ Expected Output:
 Score = 1000
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 2175
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -63,9 +51,7 @@ Expected Output:
 Score = 400
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 950
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -73,9 +59,7 @@ Expected Output:
 Score = 7
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 19
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -83,9 +67,7 @@ Expected Output:
 Score = 155
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 352
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -93,9 +75,7 @@ Expected Output:
 Score = 172
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 326
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -103,9 +83,7 @@ Expected Output:
 Score = 68
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 164
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -113,9 +91,7 @@ Expected Output:
 Score = 147
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 270
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -123,19 +99,15 @@ Expected Output:
 Score = 687
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 1361
 ----------------------------------------
 
-########## Testcase 13: Failed ##########
+########## Testcase 13: Passed ##########
 Expected Output: 
 Score = 0
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -143,9 +115,7 @@ Expected Output:
 Score = 172
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 326
 ----------------------------------------
 
 ########## Testcase 15: Failed ##########
@@ -153,9 +123,7 @@ Expected Output:
 Score = 129
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 309
 ----------------------------------------
 
 ########## Testcase 16: Failed ##########
@@ -163,9 +131,7 @@ Expected Output:
 Score = 2
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 7
 ----------------------------------------
 
 ########## Testcase 17: Failed ##########
@@ -173,9 +139,7 @@ Expected Output:
 Score = 1
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 4
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -183,9 +147,7 @@ Expected Output:
 Score = 14
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 17
 ----------------------------------------
 
 ########## Testcase 19: Failed ##########
@@ -193,9 +155,7 @@ Expected Output:
 Score = 11
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 32
 ----------------------------------------
 
 ########## Testcase 20: Failed ##########
@@ -203,9 +163,7 @@ Expected Output:
 Score = 33
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 57
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
@@ -213,9 +171,7 @@ Expected Output:
 Score = 23
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 47
 ----------------------------------------
 
 ########## Testcase 22: Failed ##########
@@ -223,9 +179,7 @@ Expected Output:
 Score = 24
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 50
 ----------------------------------------
 
 ########## Testcase 23: Failed ##########
@@ -233,19 +187,15 @@ Expected Output:
 Score = 30
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 82
 ----------------------------------------
 
-########## Testcase 24: Failed ##########
+########## Testcase 24: Passed ##########
 Expected Output: 
 Score = 0
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 25: Failed ##########
@@ -253,9 +203,7 @@ Expected Output:
 Score = 26539
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 33518
 ----------------------------------------
 
 ########## Testcase 26: Failed ##########
@@ -263,9 +211,7 @@ Expected Output:
 Score = 19797
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 25311
 ----------------------------------------
 
 ########## Testcase 27: Failed ##########
@@ -273,9 +219,7 @@ Expected Output:
 Score = 27325
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 34396
 ----------------------------------------
 
 ########## Testcase 28: Failed ##########
@@ -283,9 +227,7 @@ Expected Output:
 Score = 32175
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BoggleSolver.<init>(BoggleSolver.java:13)
-	at Solution.main(Solution.java:27)
+Score = 36840
 ----------------------------------------
 
 ########## Testcase 29: Failed ##########
@@ -293,6 +235,6 @@ Expected Output:
 board is null
 
 Your Output: 
-null
+-20
 ----------------------------------------
 

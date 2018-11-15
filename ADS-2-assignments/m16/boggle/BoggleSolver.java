@@ -7,11 +7,11 @@ public class BoggleSolver {
 	// the given array of strings as the dictionary.
 	// (You can assume each word in the dictionary
 	// contains only the uppercase letters A through Z.)
-	private TrieSET dict, twoLetPref;
+	private TrieSET dict;
 	public BoggleSolver(String[] dictionary) {
+		dict = new TrieSET();
 		for (String word : dictionary) {
 			dict.add(word);
-			twoLetPref.add(word.substring(0, 2));
 		}
 	}
 

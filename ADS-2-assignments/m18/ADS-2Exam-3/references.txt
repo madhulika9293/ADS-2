@@ -1,3 +1,5 @@
 https://www.google.co.in/search?q=lowercase+java&oq=lowercase&aqs=chrome.1.69i57j69i59.3135j0j1&sourceid=chrome&ie=UTF-8
 https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/BinarySearchST.java.html
 https://www.google.co.in/search?newwindow=1&ei=WKLvW_CLM5r69QOq5b-QAQ&q=sort+a+hashmap+by+value&oq=sort+a+hash&gs_l=psy-ab.3.1.0l10.8205.10053..12098...0.0..0.156.1273.3j8......0....1..gws-wiz.......0i71j0i67j0i131j0i131i67.E7wzH6zD9ek
+https://www.google.co.in/search?q=sort+arraylist+java&oq=sort+arraylist+java&aqs=chrome..69i57.4542j0j1&sourceid=chrome&ie=UTF-8
+https://stackoverflow.com/questions/9047090/how-to-sort-hashmap-keys

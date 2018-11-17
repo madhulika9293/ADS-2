@@ -121,6 +121,8 @@ public class Solution {
  */
 class T9 {
 	private TST<Integer> smsWords;
+	private HashMap<String, ArrayList<String>> keyboard;
+	private static Bag<String> out;
 	/**
 	 * Constructs the object.
 	 *
@@ -128,23 +130,83 @@ class T9 {
 	 */
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
+		out = new Bag<String>();
 		smsWords = new TST();
 		for (String word : st.keys()) {
 			smsWords.put(word, st.get(word));
 			// System.out.println(word + " " + st.get(word));
 		}
+		keyboard = new HashMap<>();
+		keyboard.putIfAbsent("2", new ArrayList<String>());
+		keyboard.get("2").add("a");
+		keyboard.get("2").add("b");
+		keyboard.get("2").add("c");
+
+		keyboard.putIfAbsent("3", new ArrayList<String>());
+		keyboard.get("3").add("d");
+		keyboard.get("3").add("e");
+		keyboard.get("3").add("f");
+
+		keyboard.putIfAbsent("4", new ArrayList<String>());
+		keyboard.get("4").add("g");
+		keyboard.get("4").add("h");
+		keyboard.get("4").add("i");
+
+		keyboard.putIfAbsent("5", new ArrayList<String>());
+		keyboard.get("5").add("j");
+		keyboard.get("5").add("k");
+		keyboard.get("5").add("l");
+
+		keyboard.putIfAbsent("6", new ArrayList<String>());
+		keyboard.get("6").add("m");
+		keyboard.get("6").add("n");
+		keyboard.get("6").add("o");
+
+		keyboard.putIfAbsent("7", new ArrayList<String>());
+		keyboard.get("7").add("p");
+		keyboard.get("7").add("q");
+		keyboard.get("7").add("r");
+		keyboard.get("7").add("s");
+
+		keyboard.putIfAbsent("8", new ArrayList<String>());
+		keyboard.get("8").add("t");
+		keyboard.get("8").add("u");
+		keyboard.get("8").add("v");
+
+		keyboard.putIfAbsent("9", new ArrayList<String>());
+		keyboard.get("9").add("w");
+		keyboard.get("9").add("x");
+		keyboard.get("9").add("y");
+		keyboard.get("9").add("z");
+
 	}
 
 	// get all the prefixes that match with given prefix.
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
 		return smsWords.keysWithPrefix(prefix);
-		// return null;
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
-		return null;
+		String[] input = t9Signature.split("");
+		findComb(keyboard, input, "", input.length - 1);
+		return out;
+	}
+
+	public static void findComb(HashMap<String,
+	                              ArrayList<String>> keyboard,
+	                              String[] inp, String res, int index) {
+		if (index == -1) {
+			out.add(res);
+			res = "";
+		}
+
+		String d = inp[index];
+		int len = keyboard.get(d).size();
+		for (int i = 0; i < len; i++) {
+			findComb(keyboard, inp, keyboard.get(d).get(i) + res, index - 1);
+		}
 	}
 
 	// return all possibilities(words), find top k with highest frequency.

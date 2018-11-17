@@ -157,7 +157,14 @@ fine
 seeking
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at T9.findComb(Solution.java:205)
+	at T9.findComb(Solution.java:208)
+	at T9.findComb(Solution.java:208)
+	at T9.findComb(Solution.java:208)
+	at T9.findComb(Solution.java:208)
+	at T9.findComb(Solution.java:208)
+	at T9.potentialWords(Solution.java:193)
 	at Solution.main(Solution.java:49)
 ----------------------------------------
 
@@ -224,9 +231,16 @@ paper
 keep
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at T9.getSuggestions(Solution.java:154)
-	at T9.t9(Solution.java:178)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at T9.findComb(Solution.java:205)
+	at T9.findComb(Solution.java:208)
+	at T9.findComb(Solution.java:208)
+	at T9.findComb(Solution.java:208)
+	at T9.findComb(Solution.java:208)
+	at T9.findComb(Solution.java:208)
+	at T9.findComb(Solution.java:208)
+	at T9.potentialWords(Solution.java:193)
+	at T9.t9(Solution.java:240)
 	at Solution.main(Solution.java:81)
 ----------------------------------------
 

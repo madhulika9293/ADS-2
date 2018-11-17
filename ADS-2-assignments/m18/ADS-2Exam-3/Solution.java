@@ -2,6 +2,8 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Set;
+import java.util.HashSet;
 import java.util.HashMap;
 
 /**
@@ -120,9 +122,10 @@ public class Solution {
  * Class for t 9.
  */
 class T9 {
-	private TST<Integer> smsWords;
+	private static TST<Integer> smsWords;
 	private HashMap<String, ArrayList<String>> keyboard;
-	private static Bag<String> out;
+	// private static HashMap<String, Integer> output;
+	private static ArrayList<String> output;
 	/**
 	 * Constructs the object.
 	 *
@@ -130,7 +133,6 @@ class T9 {
 	 */
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
-		out = new Bag<String>();
 		smsWords = new TST();
 		for (String word : st.keys()) {
 			smsWords.put(word, st.get(word));
@@ -189,16 +191,30 @@ class T9 {
 
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
+		output = new ArrayList<String>();
 		String[] input = t9Signature.split("");
 		findComb(keyboard, input, "", input.length - 1);
-		return out;
+		ArrayList<String> uOut = new ArrayList<>();
+		for (String word : output) {
+			if (!uOut.contains(word)) {
+				uOut.add(word);
+			} else {
+				continue;
+			}
+		}
+		return uOut;
 	}
 
 	public static void findComb(HashMap<String,
-	                              ArrayList<String>> keyboard,
-	                              String[] inp, String res, int index) {
+	                            ArrayList<String>> keyboard,
+	                            String[] inp, String res, int index) {
 		if (index == -1) {
-			out.add(res);
+			if (smsWords.contains(res)) {
+				// output.putIfAbsent(res, 0);
+				output.add(res);
+				res = "";
+				return;
+			}
 			res = "";
 			return;
 		}

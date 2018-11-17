@@ -245,7 +245,8 @@ class T9 {
         findComb(keyboard, input, "", input.length - 1);
         ArrayList<String> uOut = new ArrayList<>();
         for (String word : output) {
-            if (!uOut.contains(word)) {
+            if (!uOut.contains(word) && word.length() ==
+                    t9Signature.length()) {
                 uOut.add(word);
             } else {
                 continue;
@@ -266,7 +267,7 @@ class T9 {
      */
     public static void findComb(final HashMap<String,
                                 ArrayList<String>> keyboard,
-                                final String[] inp, 
+                                final String[] inp,
                                 String res, int index) {
         if (index == -1) {
             if (smsWords.contains(res)) {
@@ -325,7 +326,7 @@ class T9 {
     // Don't modify this method.
 
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      t9Signature  The t 9 signature
      * @param      k            { parameter_description }

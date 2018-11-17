@@ -1,12 +1,11 @@
 Starting audit...
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:168:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:269: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:270:33: Parameter res should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:270:45: Parameter index should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:327: First sentence should end with a period. [JavadocStyle]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:248:55: '==' should be on a new line. [OperatorWrap]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:271:33: Parameter res should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:271:45: Parameter index should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 5 errors.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.

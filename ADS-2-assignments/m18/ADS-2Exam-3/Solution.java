@@ -1,5 +1,8 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 
 /**
  * Class for solution.
@@ -128,6 +131,7 @@ class T9 {
 		smsWords = new TST();
 		for (String word : st.keys()) {
 			smsWords.put(word, st.get(word));
+			// System.out.println(word + " " + st.get(word));
 		}
 	}
 
@@ -146,7 +150,26 @@ class T9 {
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
-		return null;
+		HashMap<Integer, String> wtable = new HashMap<>();
+		for (String w : words) {
+			for (String sw : getAllWords(w)) {
+				int temp = smsWords.get(sw);
+				if (wtable.containsKey(temp)) {
+					continue;
+				} else {
+					wtable.put(temp, sw);
+				}
+			}
+		}
+		Object[] keys = wtable.keySet().toArray();
+		Arrays.sort(keys);
+		ArrayList<String> out = new ArrayList<>();
+		for (int i = keys.length - 1; i > keys.length - 1 - k; i--) {
+			// System.out.println(wtable.get(keys[i]));
+			out.add(wtable.get(keys[i]));
+		}
+		Collections.sort(out);
+		return out;
 	}
 
 	// final output

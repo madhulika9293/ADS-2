@@ -120,8 +120,10 @@ public final class Solution {
      *
      * @return     { description_of_the_return_value }
      */
-    public static BinarySearchST<String, Integer> loadDictionary(final String file) {
-        BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
+    public static BinarySearchST<String, Integer>
+    loadDictionary(final String file) {
+        BinarySearchST<String, Integer>  st =
+            new BinarySearchST<String, Integer>();
         // your code goes here
         String[] sms = toReadFile(file);
         // System.out.println(Arrays.toString(sms));
@@ -163,7 +165,7 @@ class T9 {
      *
      * @param      st    symbol table.
      */
-    public T9(BinarySearchST<String, Integer> st) {
+    public T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         smsWords = new TST();
         for (String word : st.keys()) {
@@ -230,7 +232,7 @@ class T9 {
     }
 
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      t9Signature  The t 9 signature
      *
@@ -255,10 +257,17 @@ class T9 {
 
     /**
      * finds comb.
+     *
+     * @param      keyboard  The t 9 signature
+     * @param      inp  The t 9 signature
+     * @param      res  The t 9 signature
+     * @param      index  The t 9 signature
+     *
      */
-    public static void findComb(HashMap<String,
+    public static void findComb(final HashMap<String,
                                 ArrayList<String>> keyboard,
-                                String[] inp, String res, int index) {
+                                final String[] inp, 
+                                String res, int index) {
         if (index == -1) {
             if (smsWords.contains(res)) {
                 // output.putIfAbsent(res, 0);
@@ -314,7 +323,7 @@ class T9 {
 
     // final output
     // Don't modify this method.
-    
+
     /**
      * { function_description }
      *

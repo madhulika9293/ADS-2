@@ -1,22 +1,12 @@
 Starting audit...
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:123: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:124: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:166:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:166:15: Parameter st should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:232: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:259:33: Parameter keyboard should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:260:52: Expected @param tag for 'keyboard'. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:261:33: Parameter inp should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:261:42: Expected @param tag for 'inp'. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:261:47: Parameter res should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:261:54: Expected @param tag for 'res'. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:261:59: Parameter index should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:261:63: Expected @param tag for 'index'. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:317: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:318: First sentence should end with a period. [JavadocStyle]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:168:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:269: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:270:33: Parameter res should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:270:45: Parameter index should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:327: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 6 errors.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.

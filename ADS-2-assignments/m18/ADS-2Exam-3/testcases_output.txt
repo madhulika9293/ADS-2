@@ -283,9 +283,67 @@ paper
 keep
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at T9.getSuggestions(Solution.java:249)
-	at T9.t9(Solution.java:258)
-	at Solution.main(Solution.java:83)
+update
+record
+recorded
+immediately
+bristol
+call
+called
+calling
+spoil
+spoiled
+kiss
+kisses
+kissing
+pints
+alone
+blood
+bloodsend
+shop
+shoppin
+shopping
+any
+anything
+boy
+pay
+say
+says
+goods
+cards
+cares
+careswt
+rate
+save
+saved
+card
+care
+case
+happy
+sales
+come
+comedy
+comes
+poker
+roles
+real
+really
+realy
+maps
+itor
+paces
+adds
+beer
+jane
+kane
+chef
+ages
+agesring
+paper
+papers
+pases
+keep
+keeping
+keeps
 ----------------------------------------
 

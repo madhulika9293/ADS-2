@@ -244,7 +244,7 @@ class T9 {
 		Object[] keys = wtable.keySet().toArray();
 		Arrays.sort(keys);
 		ArrayList<String> out = new ArrayList<>();
-		for (int i = keys.length - 1; i > keys.length - 1 - k; i--) {
+		for (int i = keys.length - 1; i >= 0 && i > keys.length - 1 - k; i--) {
 			// System.out.println(wtable.get(keys[i]));
 			out.add(wtable.get(keys[i]));
 		}

@@ -202,6 +202,7 @@ class T9 {
 				continue;
 			}
 		}
+		Collections.sort(uOut);
 		return uOut;
 	}
 

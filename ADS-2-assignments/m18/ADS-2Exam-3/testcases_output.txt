@@ -92,7 +92,7 @@ messagesome
 going
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 hello
 pizza
@@ -165,9 +165,9 @@ ball
 call
 involve
 finish
+gone
 good
 home
-gone
 battery
 friends
 watches
@@ -175,20 +175,20 @@ morning
 tonight
 shop
 phne
+any
 bmw
 box
-any
 boy
 coz
-law
 jay
-kay
-lay
 jaz
+kay
+law
+lay
 ammo
+das
 ear
 far
-das
 send
 pocked
 pest
@@ -196,26 +196,26 @@ rest
 woo
 paying
 saying
-lands
 james
+lands
 hates
 casting
 packing
 peeps
 bam
+bao
 cam
 can
-bao
-bat
-cat
 abt
 act
+bat
+cat
 mines
 liver
 lives
-find
 dime
 dine
+find
 fine
 seeking
 ----------------------------------------
@@ -284,8 +284,8 @@ keep
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at T9.getSuggestions(Solution.java:248)
-	at T9.t9(Solution.java:257)
+	at T9.getSuggestions(Solution.java:249)
+	at T9.t9(Solution.java:258)
 	at Solution.main(Solution.java:83)
 ----------------------------------------
 

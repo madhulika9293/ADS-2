@@ -200,6 +200,7 @@ class T9 {
 		if (index == -1) {
 			out.add(res);
 			res = "";
+			return;
 		}
 
 		String d = inp[index];

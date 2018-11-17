@@ -402,14 +402,14 @@ Starting audit...
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:199:39: Parameter inp should be final. [FinalParameters]
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:199:53: Parameter res should be final. [FinalParameters]
 [ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:199:65: Parameter index should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:208: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:213:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:213:48: Parameter words should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:213:72: Parameter k should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:228:35: 'out' hides a field. [HiddenField]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:239:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:239:36: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:239:56: Parameter k should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:209: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:214:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:214:48: Parameter words should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:214:72: Parameter k should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:229:35: 'out' hides a field. [HiddenField]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:240:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:240:36: Parameter t9Signature should be final. [FinalParameters]
+[ERROR] D:\MSIT\First Year\IT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:240:56: Parameter k should be final. [FinalParameters]
 Audit done.
 Checkstyle ends with 35 errors.
 Starting audit...

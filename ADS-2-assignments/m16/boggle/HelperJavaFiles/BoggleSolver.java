@@ -1,4 +1,6 @@
 import java.util.HashSet;
+
+import edu.princeton.cs.algs4.In;
 /**
  * Class for boggle solver.
  */
